@@ -1,0 +1,31 @@
+html, body {
+    background: #EEEEEE;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header {
+    position: obsolute, fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid red;
+    margin: 50px 50px;
+}
+#header #header-img {
+    height: 2em;
+    flex-basis: auto;
+    align-self: flex-start;
+}
+#header #nav-bar {
+    flex-basis: auto;
+    align-self: flex-end;
+    border: 1px solid black;
+}
+#header #nav-bar ul {
+    list-style-type: none;
+
+}
+
+
+

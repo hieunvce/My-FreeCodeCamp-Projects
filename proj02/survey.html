@@ -1,0 +1,122 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="survey.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8"/>
+  <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+
+  <section id="mainform">
+    <p id="description">Let us know how we can improve freeCodeCamp</p>
+
+    <form id="survey-form" action="/survey.php" method="post" target="_blank">
+
+      <fieldset>
+        <legend>PERSONAL INFO</legend>
+        <section class="rowTab">
+          <label id="name-label" for="name">* Name</label>
+          <input class="textbox" id="name" type="text" name="name" placeholder="Enter your name" required/>
+        </section>
+        <section class="rowTab">
+          <label id="email-label" for="email">* Email:</label>
+          <input class="textbox" id="email" type="email" name="email" placeholder="Enter your Email" required/>
+        </section>
+        <section class="rowTab">
+          <label id="number-label" for="number">* Age:</label>
+          <input class="textbox" id="number" type="number" min="0" max="500" name="age" placeholder="Age" required/>
+        </section>
+      </fieldset>
+
+      <fieldset>
+        <legend>QUESTIONS</legend>
+        <section class="rowTab">
+          <label for="dropdown">
+            Which option best descibes your current role?
+          </label>
+          <select class="dropdown-list" id="dropdown" name="role">
+            <option value="student" selected>Student</option>
+            <option value="fulltimejob">Fulltime Job</option>
+            <option value="fulltimelearner">Fulltime Learner</option>
+            <option value="nottosay">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </section>
+
+        <section class="rowTab">
+          <label>* How likely is that you would recommend freeCodeCamp to a friend?
+          </label>
+          <ul id="recommend" class="multichoice"  style="list-style-type: none">
+            <li>
+              <input type="radio" name="recommend" value="definitely" checked>Definitely
+            </li>
+            <li>
+              <input type="radio" name="recommend" value="maybe">Maybe
+            </li>
+            <li>
+              <input type="radio" name="recommend" value="notsure">Not sure
+            </li>
+          </ul>
+        </section>
+
+        <section class="rowTab">
+          <label for="likemost">
+            What do you like most in FCC:
+          </label>
+          <select class="dropdown-list" id="likemost" name="likemost">
+            <option value="challengers">Challengers</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="opensource">Open Source</option>
+          </select>
+        </section>
+
+        <section class="rowTab">
+          <label>
+            Things that should be improved in the future (Check all that apply):
+          </label>
+          <ul id="needimprove" class="multichoice" style="list-style-type:none">
+
+            <li><input type="checkbox" name="improvelist" value="front-end">Front-end Projects</li>
+            
+            <li> <input type="checkbox" name="improvelist" value="back-end">Back-end Projects</li>
+           
+            <li><input type="checkbox" name="improvelist" value="data-visualization">Data Visualization</li>
+            
+            <li><input type="checkbox" name="improvelist" value="challenges">Challenges</li>
+            
+            <li><input type="checkbox" name="improvelist" value="open-source">Open Source Community</li>
+            
+            <li><input type="checkbox" name="improvelist" value="help-rooms">Gitter help rooms</li>
+            
+            <li><input type="checkbox" name="improvelist" value="videos">Videos</li>
+            
+            <li><input type="checkbox" name="improvelist" value="city-meetups">City Meetups</li>
+            
+            <li><input type="checkbox" name="improvelist" value="wiki">Wiki</li>
+            
+            <li> <input type="checkbox" name="improvelist" value="forum">Forum</li>
+             
+            <li><input type="checkbox" name="improvelist" value="additional-courses">Additional Courses</li>
+            
+          </ul>
+        </section>
+
+        <section class="rowTab">
+          <label for="cmt">Any Comments or Suggestions?</label>
+          <textarea id="cmt" name="comment" placeholder="Enter your comment here..."></textarea>
+        </section>
+      </fieldset>
+      <input id="submit" type="submit" value="SUBMIT"/>
+    </form>
+  </section>
+</body>
+
+</html>

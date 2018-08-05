@@ -1,0 +1,71 @@
+html, body {
+  background: #a9d8d2;
+  font-family: "Raleway", Helvetica, sans-serif;
+  text-align: center;
+}
+
+/*title and description*/
+#title { 
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  padding: 25px;
+}
+#mainform {
+  background: #fafafa;
+  border-radius: 5px;
+  margin: 5vw auto;
+  width: 70%;
+}
+#description {
+  text-align: center;
+  padding: 2rem;
+}
+
+/*fieldset*/
+fieldset {
+  border: 1px solid black;
+  margin: 1rem 10%;
+  padding: 0% 5%;
+}
+/*every field in form*/
+.rowTab {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: fit-content;
+  align-content: center;
+}
+label {
+  flex-basis: 50%;
+  text-align: right;
+  margin: 2%;
+}
+.textbox {
+  flex-basis: 50%;
+  height: 2em;
+  margin: 2%;
+}
+.dropdown-list {
+  flex-basis: 50%;
+  height: 2em;
+  margin: 2%;
+}
+.multichoice {
+  flex-basis: 50%;
+  text-align: left;
+}
+#cmt {
+  flex-basis: 50%;
+  margin-bottom: 2%;
+}
+li {
+  height: 2em;
+}
+#submit {
+  color: white;
+  background: rgba(10, 147, 201, 0.815);
+  padding: 1em;
+  border-radius: 5px;
+  margin: 2em;
+}
